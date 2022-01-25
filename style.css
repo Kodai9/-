@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS 1p";
+  color: inherit;
+}
+
+body {
+  margin: 0 auto;
+  width: 100vw;
+  min-height: 100vh;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+}
+
+header {
+  text-decoration: underline;
+}
+
+.main {
+  margin-top: 50px;
+  display: grid;
+  grid-template:
+    "... ...... ... ...... ... ...... ..." 30px
+    "... works1 ... works2 ... works3 ..." 1fr
+    "... ...... ... ...... ... ...... ..." 10px
+    "... works4 ... works5 ... works6 ..." 1fr
+    "... ...... ... ...... ... ...... ..." 10px
+    "... works7 ... works8 ... works9 ..." 1fr
+    "... ...... ... ...... ... ...... ..." 30px
+    / 10px 1fr 15px 1fr 15px 1fr 10px;
+}
+
+.main a p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.works1 {
+  grid-area: works1;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
